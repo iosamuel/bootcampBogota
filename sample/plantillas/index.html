@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Inicio</title>
+</head>
+<body>
+	<ul>
+		{% for entrada in entradas %}
+			<li>{{ entrada.nombre }} - {{ entrada.usuario.username }}</li>
+		{% empty %}
+			<li>No hay entradas.</li>
+		{% endfor %}
+	</ul>
+
+	<script src="{{ STATIC_URL }}index.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Insertar entrada</title>
+</head>
+<body>
+
+	<form action="." method="post">{% csrf_token %}
+		{{ entrada_form }}
+		<input type="submit" value="Guardar">
+	</form>
+	
+</body>
+</html>
